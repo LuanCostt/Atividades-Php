@@ -25,4 +25,13 @@ function saudacao($nome): string {
 }
 
 var_dump($nome,  $idade);
+echo'<br>';
+
+$arr = array(1,2,3,4,5);
+$arr2 = [1,2,3,4,5];
+
+echo $arr [0]. " " . $arr2 [1];
+foreach ($arr2 as $number){
+    echo "Número: ". $number."<br>";
+}
 ?>
