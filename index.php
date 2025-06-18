@@ -1,4 +1,7 @@
 <?php
+require 'helper.php';
+echo validarEnderecoEmail('luanexemplo@gmail.com');
+echo validarEnderecoEmail('https://google.com');
 
 echo"<h1>Hello World</h1>";
 echo"<hr>";
@@ -19,7 +22,12 @@ if($idade > 18){
 else{
     echo 'Você é menor de idade: '.$idade . '<br>';
 }
-
+/**
+ * Função de saudacao
+ * @param string Nome do usuario
+ * @return string Mensagem de saudação com o nome do usuario
+ * @author Luan <>
+ */
 function saudacao($nome): string {
     return 'Olá '. $nome. '<br>';
 }
